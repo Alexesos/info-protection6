@@ -1,0 +1,39 @@
+.file-uploader {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+
+    border: 1px solid #606060;
+
+    &__show {
+        cursor: pointer;
+        max-width: fit-content;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__textarea {
+        resize: none;
+        border: 1px solid #606060;
+        width: 100%;
+        max-height: 44px;
+        overflow-y: scroll;
+        padding: 5px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+.file-downloader {
+    &__download {
+        transition: .3s ease;
+        &_disabled {
+            pointer-events: none;
+            opacity: .5;
+        }
+    }
+}

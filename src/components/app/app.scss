@@ -1,0 +1,36 @@
+.main {
+    display: flex;
+
+    &__container {
+        flex: 1 1 auto;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__start,
+    &__mid,
+    &__end {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        gap: 10px;
+    }
+}
+
+input {
+    max-width: 200px;
+}
+
+button {
+    padding: 5px 10px;
+    border: 1px solid #606060;
+    transition: .3s ease;
+
+    &:hover {
+        background: #606060;
+        color: #fff;
+    }
+}
