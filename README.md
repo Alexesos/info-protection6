@@ -1,12 +1,26 @@
-# React + Vite
+# Інструкція для встановлення проекту
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Через Git:
+1. Переконайтеся, що на ПК встановлений Git, Node.js
+2. Скопіювати посилання репозиторію і в терміналі виконати "git clone <*посилання*>"
+3. Перейти в папку проекту і встановити залежності "npm install"
+4. Запустити проект "npm start" або "npm run dev"
+5. Перейти за посилання, відображуваним в терміналі, або відкрити "http://localhost:5173/" в браузері
 
-Currently, two official plugins are available:
+## Власноруч
+1. Переконайтеся, що на ПК встановлений Node.js
+2. Завантажити файли проекту за допомогою кнопки "Code"
+3. Перейти в папку проекту і встановити залежності "npm install"
+4. Запустити проект "npm start" або "npm run dev"
+5. Перейти за посилання, відображуваним в терміналі, або відкрити "http://localhost:5173/" в браузері
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Якщо проект не запускається або не працює
+Спробуйте очистити і повторно встановити залежності "rm -rf node_modules", "npm install"
+Переконайтеся що у вас встановлений та запущений сервер **info-protection6-server**
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Інструкція користування
+- Блок "Повідомлення для шифрування" використовується для ввода тексту через завантаження файлу, шляхом натискання на відповідну кнопку або настивнувши на кнопку "показати" та вводу з клавіатури
+- Блоки "Публчній ключ", "Приватний ключ" використовується відповідно попередьному блоку, для задання піблічного та приватного ключів відповідно
+- Кнопки "Отримати приватний ключ", "Отримати публічний ключ" використовуються для генерування публічних і приватних ключів відповідно
+- Кнопки "Зашифрувати", "Дешифрувати" виконують операцію шифрування, дешифрування відповідно
+- Результати операцій генерування ключів та шифрування, дешифрування завантажуються файлами
